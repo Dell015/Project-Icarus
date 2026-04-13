@@ -68,5 +68,5 @@ I am building Icarus at my own pace, starting with the **FastAPI Reasoning Engin
 
 ---
 
-**Lead Architect:** [Your Name]  
+**Lead Architect:** Randel Serafica
 **"Don't just fly. Know how you fly."**
