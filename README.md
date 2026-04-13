@@ -1,4 +1,4 @@
-# icarus icarus 🌊
+# Project icarus 🌊
 > **"The AI wrote it is never an acceptable answer. If you can’t explain your work, it’s not your work."**
 
 Project Icarus is an automated **Socratic Gatekeeper** designed for the modern era of AI-assisted creation. It bridges the gap between AI-generated output and human accountability by identifying "Complexity Hotspots" and forcing the creator to defend their logic through a Socratic audit.
