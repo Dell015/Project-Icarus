@@ -1,75 +1,74 @@
-# Project icarus 🌊
+# Project Icarus 🌊
 > **"The AI wrote it is never an acceptable answer. If you can’t explain your work, it’s not your work."**
 
-Project Icarus is an automated **Socratic Gatekeeper** designed for the modern era of AI-assisted creation. It bridges the gap between AI-generated output and human accountability by identifying "Complexity Hotspots" and forcing the creator to defend their logic through a Socratic audit.
+Project Icarus is a **Universal Integrity & Logic Auditor**. In an era where AI can generate essays, code, and research in seconds, Icarus acts as the necessary friction to ensure human accountability. It identifies "Wax Wings"—unverified, AI-generated, or poorly understood logic—and forces the creator to defend their work through a Socratic audit before it is allowed to "fly."
 
 ---
 
 ## 🏛️ The Vision
-We are living in an era where anyone can "create" using AI, but few can "explain." Like the mythical Icarus, many developers are flying with wings they didn't build and don't understand. 
+We are living in an era where anyone can "create" using AI, but few can "explain." Like the mythical Icarus, many are flying with wings they didn't build and don't understand. 
 
-This project is a personal mission to ensure that human intelligence remains the master of the tool. Icarus doesn't just check if your project is finished—it checks if **you** were the one who finished it.
+Icarus is a personal mission to bridge the gap between AI-generated output and true human mastery. Whether you are submitting a line of code, a legal brief, or a research paper, Icarus ensures that **human intelligence remains the architect**, and the AI remains the tool.
 
 ---
 
 ## 🛠️ System Architecture (The "No-Rework" Stack)
 
-I have architected Icarus as a **Decoupled Web Application** using a Polyglot stack to ensure peak performance and industrial-grade stability.
+I have architected Icarus as a **Decoupled, Universal Web Application** to ensure high performance and cross-platform flexibility across all document types.
 
 ### **Core Stack**
 * **Frontend:** [Angular](https://angular.io/) (TypeScript)
     * *Role:* The Auditor’s Dashboard (PWA).
-    * *Why:* Strict, opinionated structure with **Signals** for reactive, high-performance UI.
+    * *Why:* Rigid structure with **Signals** for a reactive UI that works seamlessly on desktop and mobile.
 * **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Python)
-    * *Role:* The Reasoning Engine & REST API.
-    * *Why:* Asynchronous processing for handling heavy AI workloads without bottlenecking.
+    * *Role:* The Universal Reasoning Engine.
+    * *Why:* Python’s ecosystem allows for advanced parsing of various file types (.py, .docx, .pdf) and asynchronous AI processing.
 * **Intelligence:** [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/) + **LangGraph**
-    * *Role:* The Senior Architect.
-    * *Why:* 2M token context window and agentic loops to manage the Socratic dialogue flow.
+    * *Role:* The Socratic Auditor.
+    * *Why:* Uses a 2M token context window to analyze the internal consistency of massive projects or long-form documents.
 * **Persistence:** [PostgreSQL](https://www.postgresql.org/) (via **Supabase**)
-    * *Role:* The Memory & Auth.
-    * *Why:* Utilizing **pgvector** for semantic search and audit-history tracking.
+    * *Role:* The Memory Vault.
+    * *Why:* Using **pgvector** for semantic search to compare user defenses against the original document logic.
 
-### **Infrastructure & Deployment**
-* **Hosting (FE):** [Vercel](https://vercel.com/) (Global Edge Delivery).
-* **Hosting (BE):** [Railway](https://railway.app/) (Containerized Python Environment).
-* **DevOps:** [Docker](https://www.docker.com/) (Environment Consistency).
-* **CI/CD:** [GitHub Actions](https://github.com/features/actions) (Automated Integrity Checks).
+### **Infrastructure**
+* **Deployment:** [Vercel](https://vercel.com/) (Frontend) & [Railway](https://railway.app/) (Backend).
+* **DevOps:** [Docker](https://www.docker.com/) for environment parity and [GitHub Actions](https://github.com/features/actions) for automated logic-gate checks.
 
 ---
 
 ## 🔍 How It Works: The "Audit of Understanding"
 
-### 1. The Integrity Scan (Melt Analysis)
-The backend performs an entropy analysis to find sections of code that are statistically likely to be unverified AI-slop. It flags these as **"Complexity Hotspots."**
+### 1. Integrity Scanning (The "Melt" Analysis)
+Icarus identifies **"Complexity Hotspots"**—sections of a project that exhibit high entropy or "vague zones" typically associated with unverified AI generation or logical leaps.
 
 ### 2. Socratic Interrogation
-Instead of providing fixes, the app generates a **Mandatory Defense Checklist**. 
-* *Example:* "You used this specific recursion logic on Line 82. Explain the memory trade-off you made here versus an iterative method."
+Instead of a simple "Pass/Fail," the app generates a **Mandatory Defense Checklist**. 
+* **For Code:** "Explain the trade-off of this specific algorithm on Line 42."
+* **For Prose:** "You made a specific claim about X. Walk through the evidence used to reach this conclusion."
 
 ### 3. The Wax Meter
 A real-time dashboard visualizing **Project Health vs. Project Risk**. 
-* **High Wax (Red):** The user cannot explain the foundations; the project is fragile.
-* **Solidified (Green):** The user has successfully defended the logic; the "wings" are solid.
+* **High Wax (Red):** The creator cannot explain the foundations; the project is at risk of "melting" under scrutiny.
+* **Solidified (Green):** The creator has successfully verified and defended the logic.
 
 ---
 
-## 📱 Platform Strategy
-* **Cross-Platform Web App:** Fully responsive design for desktop and mobile.
+## 📱 Platform Strategy: Universal & Adaptive
+* **Beyond Code:** Designed for students, developers, and professionals alike.
 * **PWA Ready:** Installable on Windows, Mac, Android, and iOS.
-* **RESTful Design:** Modular architecture allows for future expansion into Browser Extensions or Mobile Apps without core logic rework.
+* **RESTful Design:** Modular API-first architecture allows for future expansion into Browser Extensions (to audit Google Docs/GitHub) without backend rework.
 
 ---
 
 ## 🎯 Success Metrics
-* **Verification:** Catching hallucinated or unverified logic before it hits production.
-* **Accountability:** Ensuring every "Audit Rule" is mapped to a human explanation.
-* **Zero-Slop Policy:** Turning "AI-assisted" back into "Human-led."
+* **Verification:** Catching "AI-slop" and unverified claims before they are published.
+* **Accountability:** Mapping every major decision in a project to a human explanation.
+* **Human-Led Design:** Ensuring AI serves as a catalyst for deeper understanding, not a shortcut for it.
 
 ---
 
 ## 🏗️ Development Status
-I am building Icarus as a personal project, prioritizing the **FastAPI Reasoning Engine** and **Dockerization** first. Every line of code in this repository is subject to the Icarus Rule: *If I can't explain it, I don't commit it.*
+Built at a personal pace. Currently focusing on the **Universal File Parser** (Python) to support multi-format audits before finalizing the **Angular Dashboard**.
 
 ---
 
