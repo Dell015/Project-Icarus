@@ -1,4 +1,4 @@
-# Project Icarus
+# icarus icarus 🌊
 > **"The AI wrote it is never an acceptable answer. If you can’t explain your work, it’s not your work."**
 
 Project Icarus is an automated **Socratic Gatekeeper** designed for the modern era of AI-assisted creation. It bridges the gap between AI-generated output and human accountability by identifying "Complexity Hotspots" and forcing the creator to defend their logic through a Socratic audit.
@@ -14,20 +14,27 @@ This project is a personal mission to ensure that human intelligence remains the
 
 ## 🛠️ System Architecture (The "No-Rework" Stack)
 
-I have architected Icarus as a **Decoupled Web Application** to ensure high performance and cross-platform flexibility.
+I have architected Icarus as a **Decoupled Web Application** using a Polyglot stack to ensure peak performance and industrial-grade stability.
 
+### **Core Stack**
 * **Frontend:** [Angular](https://angular.io/) (TypeScript)
-    * *Role:* The Auditor’s Dashboard.
-    * *Why:* Chosen for its strict, opinionated structure and "Signals" for reactive, high-performance UI.
+    * *Role:* The Auditor’s Dashboard (PWA).
+    * *Why:* Strict, opinionated structure with **Signals** for reactive, high-performance UI.
 * **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Python)
-    * *Role:* The Reasoning Engine.
-    * *Why:* Leverages Python’s AI ecosystem. FastAPI handles asynchronous processing of project files via a **REST API**.
-* **Intelligence:** [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/)
+    * *Role:* The Reasoning Engine & REST API.
+    * *Why:* Asynchronous processing for handling heavy AI workloads without bottlenecking.
+* **Intelligence:** [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/) + **LangGraph**
     * *Role:* The Senior Architect.
-    * *Why:* Utilizes a 2M token context window to understand the *entire* project structure simultaneously.
-* **Persistence:** [PostgreSQL](https://www.postgresql.org/)
-    * *Role:* The Memory.
-    * *Why:* Stores audit history, logic defense records, and Integrity Scores.
+    * *Why:* 2M token context window and agentic loops to manage the Socratic dialogue flow.
+* **Persistence:** [PostgreSQL](https://www.postgresql.org/) (via **Supabase**)
+    * *Role:* The Memory & Auth.
+    * *Why:* Utilizing **pgvector** for semantic search and audit-history tracking.
+
+### **Infrastructure & Deployment**
+* **Hosting (FE):** [Vercel](https://vercel.com/) (Global Edge Delivery).
+* **Hosting (BE):** [Railway](https://railway.app/) (Containerized Python Environment).
+* **DevOps:** [Docker](https://www.docker.com/) (Environment Consistency).
+* **CI/CD:** [GitHub Actions](https://github.com/features/actions) (Automated Integrity Checks).
 
 ---
 
@@ -45,28 +52,26 @@ A real-time dashboard visualizing **Project Health vs. Project Risk**.
 * **High Wax (Red):** The user cannot explain the foundations; the project is fragile.
 * **Solidified (Green):** The user has successfully defended the logic; the "wings" are solid.
 
-
-
 ---
 
 ## 📱 Platform Strategy
-* **Cross-Platform Web App:** Built to be fully responsive.
-* **PWA Ready:** Future-proofed to be installed on Windows, Mac, Android, and iOS without the need for an App Store.
-* **RESTful Design:** The frontend and backend are completely separate, allowing for future expansion into Browser Extensions or Mobile Apps without rewriting the core logic.
+* **Cross-Platform Web App:** Fully responsive design for desktop and mobile.
+* **PWA Ready:** Installable on Windows, Mac, Android, and iOS.
+* **RESTful Design:** Modular architecture allows for future expansion into Browser Extensions or Mobile Apps without core logic rework.
 
 ---
 
 ## 🎯 Success Metrics
 * **Verification:** Catching hallucinated or unverified logic before it hits production.
 * **Accountability:** Ensuring every "Audit Rule" is mapped to a human explanation.
-* **Zero-Slop Policy:** Making the "Saturday Defense" a standard of excellence.
+* **Zero-Slop Policy:** Turning "AI-assisted" back into "Human-led."
 
 ---
 
 ## 🏗️ Development Status
-I am building Icarus at my own pace, starting with the **FastAPI Reasoning Engine** before moving to the **Angular Dashboard**. Every line of code in this repository is subject to the Icarus Rule: *If I can't explain it, I don't commit it.*
+I am building Icarus as a personal project, prioritizing the **FastAPI Reasoning Engine** and **Dockerization** first. Every line of code in this repository is subject to the Icarus Rule: *If I can't explain it, I don't commit it.*
 
 ---
 
-**Lead Architect:** Randel Serafica
+**Lead Architect:** Randel Serafica  
 **"Don't just fly. Know how you fly."**
