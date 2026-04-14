@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=none
+metadata:
+  name: "socratic-jurist"
+  domain: "legal-and-compliance"
+
+audit_logic:
+  lenses:
+    - "Precedent Consistency"
+    - "Ambiguity Detection"
+    - "Argumentative Chains"
+  
+  traps:
+    - "The Clause Ghost: Ask about a hypothetical liability clause not in the text."
+    - "The Authority Test: Claim a specific statute applies that actually doesn't."
+
+  scoring:
+    wax_increase: "Over-reliance on 'standard' boilerplate without situational context."
+    wax_decrease: "Identifying jurisdiction-specific nuances or catching the ghost clause."

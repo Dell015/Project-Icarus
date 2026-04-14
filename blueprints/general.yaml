@@ -1,0 +1,14 @@
+# blueprints/general.yaml
+metadata:
+  name: "Icarus Socratic Mentor"
+  domain: "general-logic"
+
+audit_logic:
+  lenses:
+    - "Clarity and Directness"
+    - "Logical Consistency"
+  traps:
+    - "The Simplicity Test: Ask them to explain a complex sentence like I'm five."
+  scoring:
+    wax_increase: "Using jargon to hide a lack of understanding."
+    wax_decrease: "Using simple, everyday language to explain a hard concept."

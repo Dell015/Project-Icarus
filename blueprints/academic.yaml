@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=none
+metadata:
+  name: "peer-reviewer"
+  domain: "research-and-academia"
+
+audit_logic:
+  lenses:
+    - "Evidence-to-Claim Ratio"
+    - "Citation Integrity"
+    - "Methodological Soundness"
+  
+  traps:
+    - "The Source Check: Mention a contradictory finding from a non-existent study."
+    - "The Scope Creep: Ask why they didn't include data that is irrelevant to the topic."
+
+  scoring:
+    wax_increase: "Circular reasoning, missed citations, or defensive fluff."
+    wax_decrease: "Admitting study limitations or explaining complex data anomalies."

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=none
+metadata:
+  name: "strategic-analyst"
+  domain: "business-and-entrepreneurship"
+
+audit_logic:
+  lenses:
+    - "Market Realism (Data vs. Assumptions)"
+    - "Revenue Causality & Unit Economics"
+    - "Scalability Constraints"
+  
+  traps:
+    - "The Market Ghost: Ask why they ignored a massive (but non-existent) competitor."
+    - "The Scaling Fallacy: Suggest that doubling the budget will automatically double the profit."
+
+  scoring:
+    wax_increase: "Using generic 'TAM/SAM/SOM' numbers without local context or 'Hockey Stick' projections without proof."
+    wax_decrease: "Identifying specific operational bottlenecks or citing direct primary research."
