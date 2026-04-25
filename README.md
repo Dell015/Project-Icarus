@@ -3,7 +3,7 @@
 
 > *"The AI wrote it" is never an acceptable answer. If you can't explain your work, it's not your work.*
 
-> *"Don't just fly. Know how you fly."*
+> *"this app is for innovators who wants to ensure that their wings are made to fly."*
 > — Randel Serafica, Lead Architect
 
 ---
