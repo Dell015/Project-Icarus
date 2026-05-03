@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void:    #080808;
+  --ash:     #111111;
+  --smoke:   #1a1a1a;
+  --ember:   #c9a84c;
+  --wax:     #d4502a;
+  --feather: #7eb89a;
+  --bone:    #e8e0d0;
+  --mist:    #666666;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--void);
+  color: var(--bone);
+}
+
+body {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--ash); }
+::-webkit-scrollbar-thumb { background: var(--mist); border-radius: 2px; }
+
+/* Grain overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* Ember glow utility */
+.glow-ember {
+  text-shadow: 0 0 20px rgba(201, 168, 76, 0.4);
+}
+
+.glow-wax {
+  text-shadow: 0 0 20px rgba(212, 80, 42, 0.5);
+}
+
+.border-ember { border-color: var(--ember); }
+.border-wax   { border-color: var(--wax); }
