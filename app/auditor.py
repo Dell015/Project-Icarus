@@ -125,9 +125,9 @@ def try_gemini(content: str, history: list, domain: str, session_id: str) -> dic
                 m.name for m in models
                 if "flash" in m.name.lower() and "experimental" not in m.name.lower()
             ]
-            model_name = flash_models[0] if flash_models else "gemini-1.5-flash"
+            model_name = flash_models[0] if flash_models else "gemini-2.5-flash"
         except Exception:
-            model_name = "gemini-1.5-flash"
+            model_name = "gemini-2.5-flash"
 
         print(f"[Gemini fallback] using model: {model_name}")
         prompt = build_prompt(content, history, domain)
